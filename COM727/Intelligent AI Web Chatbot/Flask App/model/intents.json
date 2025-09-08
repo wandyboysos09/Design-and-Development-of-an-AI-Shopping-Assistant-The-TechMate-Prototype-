@@ -1,0 +1,318 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "hello",
+        "hey",
+        "hi",
+        "good day",
+        "greetings",
+        "what's up",
+        "how is it going",
+        "how are you",
+        "hi there",
+        "hey chatbot",
+        "morning",
+        "afternoon",
+        "evening",
+        "hello friend",
+        "yo",
+        "howdy"
+      ],
+      "responses": [
+        "Hello! How can I assist you today.",
+        "Hey there! What brings you here.",
+        "Hi! I’m glad you’re here. How can I help.",
+        "Good day! How may I assist you with our products or services.",
+        "Greetings! Let me know if you need any help with computers or accessories."
+      ],
+      "context": "Used when the user initiates a conversation with a greeting."
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "see ya",
+        "see you later",
+        "bye",
+        "goodbye",
+        "have a nice day",
+        "bye bye",
+        "catch you later",
+        "talk to you soon",
+        "i'm leaving",
+        "farewell",
+        "until next time",
+        "signing off"
+      ],
+      "responses": [
+        "Goodbye! Have a wonderful day ahead.",
+        "See you later! Come back anytime.",
+        "Take care! I’ll be here whenever you need me.",
+        "Farewell! Don’t hesitate to return if you have more questions.",
+        "Until next time! Happy shopping."
+      ],
+      "context": "Used when the user ends the conversation."
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old are you",
+        "what is your age",
+        "your age",
+        "age?",
+        "tell me your age",
+        "when were you created",
+        "are you old",
+        "are you young",
+        "how long have you existed"
+      ],
+      "responses": [
+        "I don’t really have an age like humans do — I was created to help you.",
+        "I’m as old as my latest update.",
+        "I don’t age, but I’m always here to assist you.",
+        "Age is just a number for an AI like me. I’m always learning and improving.",
+        "I was designed to be timeless, so I’ll never grow old."
+      ],
+      "context": "Used when the user asks about the chatbot's age or creation."
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "name",
+        "your name",
+        "what should I call you",
+        "who are you",
+        "do you have a name",
+        "identify yourself",
+        "what's your name",
+        "can I know your name"
+      ],
+      "responses": [
+        "I’m TechMate your friendly AI Chatbot.",
+        "You can call me TechMate your AI Chatbot.",
+        "I’m a virtual assistant here to help you with your queries.",
+        "I go by TechMate, your digital helper.",
+        "My name is TechMate, at your service."
+      ],
+      "context": "Used when the user asks for the chatbot's identity."
+    },
+    {
+      "tag": "owner",
+      "patterns": [
+        "who is your owner",
+        "do you have an owner",
+        "who created you",
+        "who built you",
+        "who made you",
+        "your owner"
+      ],
+      "responses": [
+        "My owner is Kashif.",
+        "I was created by Kashif.",
+        "Kashif is my owner."
+      ],
+      "context": "Used when the user asks about the chatbot's owner or creator."
+    },
+    {
+      "tag": "shop_products",
+      "patterns": [
+        "i would like to buy something",
+        "what are your products",
+        "what do you sell",
+        "product names",
+        "tell me about your store",
+        "what items do you have",
+        "do you sell laptops",
+        "do you sell computers",
+        "what kind of products are available",
+        "show me your inventory",
+        "list of products",
+        "what gadgets do you offer",
+        "do you have monitors",
+        "do you sell pc accessories"
+      ],
+      "responses": [
+        "We sell a wide range of computers and accessories, including Laptops, Monitors, and PCs.",
+        "Our shop specializes in computers and related products like laptops, monitors, and desktops.",
+        "You’ll find computers, laptops, and PC accessories available with us.",
+        "We offer high-quality laptops, desktops, monitors, keyboards, and other PC peripherals.",
+        "Looking for tech? We’ve got laptops, gaming PCs, monitors, and more."
+      ],
+      "context": "Used when the user inquires about products or inventory."
+    },
+    {
+      "tag": "opening_hours",
+      "patterns": [
+        "when you open",
+        "opening hours",
+        "what time you close",
+        "closing hours",
+        "what are your hours",
+        "when you open",
+        "when you close",
+        "store timings",
+        "working hours",
+        "are you open now",
+        "what time does the shop open",
+        "what time does the shop close",
+        "is the store open today",
+        "are you open on weekends"
+      ],
+      "responses": [
+        "We are open 24 hours a day, 7 days a week.",
+        "Good news — our shop is available 24/7.",
+        "We never close. You can reach us anytime.",
+        "Our virtual store is always open for your convenience.",
+        "24/7 service means you can shop whenever you like."
+      ],
+      "context": "Used when the user asks about business hours."
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help",
+        "can you help me",
+        "i need assistance",
+        "what can you do",
+        "how can you help",
+        "support",
+        "guide me",
+        "i need help",
+        "what assistance do you provide",
+        "how do you work"
+      ],
+      "responses": [
+        "I can help you with product inquiries, store hours, and general support.",
+        "I’m here to assist with shopping, tech questions, and more.",
+        "You can ask me about our products, store policies, or tech advice.",
+        "I specialize in computers and gadgets.",
+        "Need help choosing a laptop or monitor? Just ask."
+      ],
+      "context": "Used when the user requests assistance."
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "appreciate it",
+        "thanks a lot",
+        "thank you so much",
+        "gracias",
+        "merci",
+        "cheers",
+        "you're awesome",
+        "i appreciate your help"
+      ],
+      "responses": [
+        "You’re welcome! Happy to help.",
+        "No problem at all.",
+        "Glad I could assist.",
+        "My pleasure! Enjoy your day.",
+        "Anytime."
+      ],
+      "context": "Used when the user expresses gratitude."
+    },
+    {
+      "tag": "pricing",
+      "patterns": [
+        "how much is this",
+        "what's the price",
+        "cost of laptops",
+        "price of monitors",
+        "how much does it cost",
+        "what's the cost",
+        "is it expensive",
+        "do you have discounts",
+        "are there any deals",
+        "what’s your cheapest laptop"
+      ],
+      "responses": [
+        "Prices vary depending on the model.",
+        "We have a range of prices for laptops, PCs, and monitors.",
+        "For the latest prices, please check our website or ask about a specific item.",
+        "We often have discounts.",
+        "Our budget-friendly options start at $499."
+      ],
+      "context": "Used when the user asks about product pricing."
+    },
+    {
+      "tag": "tech_support",
+      "patterns": [
+        "my laptop is slow",
+        "pc not working",
+        "tech issue",
+        "need troubleshooting",
+        "computer problem",
+        "how to fix my monitor",
+        "why is my pc crashing",
+        "help with my device",
+        "technical support",
+        "can you fix my laptop"
+      ],
+      "responses": [
+        "For tech support, try restarting your device or checking for updates.",
+        "I recommend contacting our support team for hardware issues.",
+        "Let’s troubleshoot! Is your device under warranty.",
+        "For repairs, visit our service center or check online guides.",
+        "Software issues can often be fixed by reinstalling drivers."
+      ],
+      "context": "Used when the user asks for technical assistance."
+    },
+    {
+      "tag": "yes",
+      "patterns": [
+        "yes",
+        "yeah",
+        "yep",
+        "sure",
+        "of course",
+        "absolutely",
+        "ok",
+        "right",
+        "affirmative"
+      ],
+      "responses": [
+        "Alright.",
+        "Got it.",
+        "Okay."
+      ]
+    },
+    {
+      "tag": "no",
+      "patterns": [
+        "no",
+        "nope",
+        "nah",
+        "not really",
+        "don't think so",
+        "negative"
+      ],
+      "responses": [
+        "Okay.",
+        "Alright.",
+        "Noted."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "Sorry, I don’t have any idea about that.",
+        "I’m not sure about this one.",
+        "Sorry, I didn’t quite get that.",
+        "I’m still learning.",
+        "That’s beyond my scope."
+      ],
+      "context": "Default response for unrecognized queries."
+    }
+  ],
+  "metadata": {
+    "description": "A comprehensive prompt for a retail chatbot specializing in computers and electronics.",
+    "version": "1",
+    "author": "AI Prompt Engineer",
+    "owner": "Error_404",
+    "date_created": "2025-08-21"
+  }
+}
