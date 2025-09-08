@@ -73,10 +73,10 @@ NLTK (Natural Language Processing)
 HTML, CSS, JavaScript (Frontend)
 
 6. Future Work
-Database Integration: Integrate with a real-time database to manage products and inventory dynamically.
+Link to a live product database: Connect to a database with inventory of its count of products to swap out products and their count when user(s) needs change.
 
-Advanced NLP: Explore more advanced models like Transformers to improve conversational flow and accuracy.
+Advanced Natural Language Processing: Explore more complex models such as Transformers to enhance the flow and accuracy of conversation.
 
-Multi-language Support: Expand the chatbot's capabilities to support multiple languages.
+Multiple Languages: Improve the bot to work with different languages.
 
-UI/UX Enhancements: Introduce new features like typing indicators and voice input to enhance the user experience.
+UI/UX Improvements: Add new features like typing indicators, and voice input.
