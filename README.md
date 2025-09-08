@@ -5,11 +5,14 @@ This project is a prototype of an intelligent web chatbot designed to assist cus
 
 2. Key Features
 Natural Language Processing (NLP): The chatbot understands and responds to user queries using a trained neural network model.
+
 Intent-Based Responses: It can classify user requests into predefined intents (e.g., greetings, tech_support, shop_products) and provide relevant, human-like responses.
+
 Intuitive Web Interface: The chatbot operates as a modern, real-time web chat widget, providing a smooth and user-friendly experience.
+
 Robust Backend: The backend, built with Flask, acts as a bridge between the front end and the AI model, ensuring seamless communication.
 
-3. Setup and Installation
+4. Setup and Installation
 To run this project, you need to have Python 3.x installed.
 
 Step 1: Clone the Repository
