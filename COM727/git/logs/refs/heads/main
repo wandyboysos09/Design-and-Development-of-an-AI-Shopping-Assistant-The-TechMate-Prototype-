@@ -1,1 +1,11 @@
-
+0000000000000000000000000000000000000000 c94eccf5c1731f703a95edc48464a0076f7eac96 parthaAtSolent <0mazup37@solent.ac.uk> 1753015678 +0100	commit (initial): Initial commit
+c94eccf5c1731f703a95edc48464a0076f7eac96 ed0bd0dcc74a2aaeb5ccd5a48965b4921a5f6cf5 parthaAtSolent <0mazup37@solent.ac.uk> 1755515726 +0100	commit: Intelligent AI Chatbot initial setup and model trainings are completed
+ed0bd0dcc74a2aaeb5ccd5a48965b4921a5f6cf5 df6a5e8992f3d23092b8e2ba6811275b412b2c62 parthaAtSolent <0mazup37@solent.ac.uk> 1755518054 +0100	commit: Separated html and css files separately along with added tailwind css
+df6a5e8992f3d23092b8e2ba6811275b412b2c62 d75cbceb647170209a52f6bf9eee6f16cd2614d8 parthaAtSolent <0mazup37@solent.ac.uk> 1755519375 +0100	commit: Removed jQuery from the project instead using vanilla javascript
+d75cbceb647170209a52f6bf9eee6f16cd2614d8 a670db66eb71427067356739be806c86534dfcfb parthaAtSolent <0mazup37@solent.ac.uk> 1755529718 +0100	commit: Setup the background image of the site along with some other modifications
+a670db66eb71427067356739be806c86534dfcfb 9bb308d7ddc3d7cc279bda0869e2da0fe36ed954 parthaAtSolent <0mazup37@solent.ac.uk> 1755594565 +0100	commit: Some minor changes in the styling and html
+9bb308d7ddc3d7cc279bda0869e2da0fe36ed954 0b4a9de1827bbccbf266f499625de725a71644de parthaAtSolent <0mazup37@solent.ac.uk> 1755595882 +0100	commit: Added New and improved intend.json file removing previous model trainings and intend files
+0b4a9de1827bbccbf266f499625de725a71644de 137a38210bca28d38709a1c235db9edd346dd75f parthaAtSolent <0mazup37@solent.ac.uk> 1755774586 +0100	commit: improved the look of the website. Also made some other minor changes
+137a38210bca28d38709a1c235db9edd346dd75f 8603e8efb371fbee822eccb94238d95c9e6c054a parthaAtSolent <0mazup37@solent.ac.uk> 1755777617 +0100	commit: new intend file is created
+8603e8efb371fbee822eccb94238d95c9e6c054a d923a7d33b0e0d605709579eb9ad0bd93bea7965 parthaAtSolent <0mazup37@solent.ac.uk> 1755779211 +0100	commit: Finally, concluded most of the project, and I am quite proud of it
+d923a7d33b0e0d605709579eb9ad0bd93bea7965 888e09bc98801b4e5d22069d1e8cbe452d3566ea parthaAtSolent <0mazup37@solent.ac.uk> 1755866481 +0100	commit: adding comments
