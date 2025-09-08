@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechMate - AI Chatbot</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="font-['Roboto'] text-gray-800">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-3 border-b bg-white shadow-sm">
+    <!-- Logo -->
+    <div class="text-2xl font-bold text-purple-700">COM727</div>
+
+    <!-- Search -->
+    <div class="flex justify-center flex-1 mx-8">
+      <input type="text" placeholder="Search for products & brands"
+             class="w-full max-w-lg border border-gray-300 rounded-full px-4 py-2 text-sm 
+                    focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-sm">
+    </div>
+
+    <!-- Icons -->
+    <div class="flex items-center space-x-6 text-gray-600 font-medium">
+      <span class="cursor-pointer hover:text-purple-600">Account</span>
+      <span class="cursor-pointer hover:text-purple-600">Wishlist</span>
+      <span class="cursor-pointer hover:text-purple-600">Basket</span>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="relative w-full px-6 py-6">
+    <div class="flex space-x-4 h-128">
+      <!-- Carousel Section (2/3 width) -->
+      <div class="w-2/3 relative overflow-hidden rounded-lg">
+        <div id="slider" class="flex transition-transform duration-700 ease-in-out h-full">
+          <!-- Slide 1 -->
+          <div class="w-full flex-shrink-0 flex items-center justify-center bg-gray-200">
+            <img src="../static/images/monitor_50%_off.png" class="h-full object-contain" />
+          </div>
+          <!-- Slide 2 -->
+          <div class="w-full flex-shrink-0 flex items-center justify-center bg-gray-200">
+            <img src="../static/images/christmas-sale.png" class="h-full object-contain" />
+          </div>
+        </div>
+      </div>
+
+      <!-- New Arrival Section (1/3 width) -->
+      <div class="w-1/3 rounded-lg overflow-hidden">
+        <img src="../static/images/new_arrival.png" class="h-full w-full object-cover" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Shop by Category -->
+  <section class="px-2">
+    <h2 class="text-center text-xl font-semibold mb-4">Shop by Category</h2>
+
+    <section class="w-full py-12">
+      <div class="grid grid-cols-4 gap-12 w-full">
+        <!-- Laptops -->
+        <div class="flex flex-col items-center text-center w-full">
+          <div class="w-40 h-40 bg-gray-200 rounded-lg flex items-center justify-center">
+            <img src="../static/images/laptop.png" class="max-h-28" />
+          </div>
+          <p class="mt-4 font-medium text-lg">Laptops</p>
+          <p class="text-sm text-gray-500">Gaming Laptops</p>
+          <p class="text-sm text-gray-500">AI-Ready Laptops</p>
+          <p class="text-sm text-gray-500">Windows 11 Laptops</p>
+        </div>
+
+        <!-- Desktops -->
+        <div class="flex flex-col items-center text-center w-full">
+          <div class="w-40 h-40 bg-gray-200 rounded-lg flex items-center justify-center">
+            <img src="../static/images/desktop.png" class="max-h-28" />
+          </div>
+          <p class="mt-4 font-medium text-lg">Desktops</p>
+          <p class="text-sm text-gray-500">Gaming PCs</p>
+          <p class="text-sm text-gray-500">Business PCs</p>
+          <p class="text-sm text-gray-500">Windows 11 PCs</p>
+        </div>
+
+        <!-- Monitors -->
+        <div class="flex flex-col items-center text-center w-full">
+          <div class="w-40 h-40 bg-gray-200 rounded-lg flex items-center justify-center">
+            <img src="../static/images/monitor.png" class="max-h-28" />
+          </div>
+          <p class="mt-4 font-medium text-lg">Monitors</p>
+          <p class="text-sm text-gray-500">Gaming Monitors</p>
+          <p class="text-sm text-gray-500">OLED Monitors</p>
+          <p class="text-sm text-gray-500">Business Monitors</p>
+        </div>
+
+        <!-- Printers -->
+        <div class="flex flex-col items-center text-center w-full">
+          <div class="w-40 h-40 bg-gray-200 rounded-lg flex items-center justify-center">
+            <img src="../static/images/printer.png" class="max-h-28" />
+          </div>
+          <p class="mt-4 font-medium text-lg">Printers</p>
+          <p class="text-sm text-gray-500">Home Printers</p>
+          <p class="text-sm text-gray-500">Office Printers</p>
+          <p class="text-sm text-gray-500">Scanners</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Chatbox -->
+  <div id="chat-box">
+    <!-- Chat toggle button -->
+    <button id="chat-toggle">
+      <img src="../static/images/techmate.png" alt="Chat Icon" />
+    </button>
+
+    <!-- Chat content -->
+    <div id="chat-content" class="hidden">
+      <!-- Chat header -->
+      <div id="chat-header">
+        <img src="../static/images/techmate.png" alt="Bot Avatar" id="chat-avatar">
+        <div class="chat-info">
+          <h4>TechMate</h4>
+          <p>Your AI Assistant <span class="status-dot"></span></p>
+        </div>
+        <button id="chat-close">&times;</button>
+      </div>
+
+      <!-- Chat welcome -->
+      <div id="chat-welcome">
+        <div class="welcome-icon">✨</div>
+        <h3>Welcome to our store</h3>
+        <p>I can help you with product queries, or discover right products.</p>
+      </div>
+
+      <!-- Chat messages -->
+      <div id="chat-messages"></div>
+
+      <!-- Chat input -->
+      <div id="chat-input">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="px-6 py-4 mt-8 bg-white shadow-inner">
+    <p class="text-sm italic text-gray-500 drop-shadow-sm">Prepared by team Error_404</p>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>
