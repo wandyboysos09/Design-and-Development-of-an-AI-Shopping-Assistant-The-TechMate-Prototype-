@@ -1,1 +1,225 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  position: relative; /* allow layering */
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 
+/* Blurred background layer */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+/* 
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; */
+
+  filter: blur(6px);       /* 🔥 blur effect */
+  transform: scale(1.05);  /* prevent edges showing */
+  z-index: -1;             /* keep behind content */
+}
+
+/* Hidden utility */
+.hidden {
+  display: none !important;
+}
+
+/* Positioning */
+#chat-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Toggle button */
+#chat-toggle {
+  border: none;
+  padding: 0; /* remove padding */
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  width: 60px;   /* button size */
+  height: 60px;
+  overflow: hidden; /* crop anything outside the circle */
+}
+
+/* Image fills entire button */
+#chat-toggle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* ensures the image fills the circle */
+  display: block;
+}
+
+/* Chat content */
+#chat-content {
+  width: 350px;
+  height: 90vh;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  #chat-content {
+    width: 95vw;   /* take nearly full width on small screens */
+    height: 95vh;  /* take nearly full height */
+    border-radius: 0; /* remove rounded corners for full-screen look */
+  }
+}
+
+
+/* Header */
+#chat-header {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+#chat-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat-info h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.chat-info p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: green;
+  border-radius: 50%;
+  margin-left: 4px;
+}
+
+#chat-close {
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  color: gray;
+}
+
+/* Welcome Section */
+#chat-welcome {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.welcome-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#chat-welcome h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+#chat-welcome p {
+  font-size: 13px;
+  color: gray;
+}
+
+/* Messages */
+/* Messages container */
+#chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* space between messages */
+}
+
+/* Common message style */
+.message {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+/* User messages (right side) */
+.message.sent {
+  align-self: flex-end;
+  background: #7ab3db;
+  color: white;
+  border-bottom-right-radius: 4px; /* small tail-like effect */
+}
+
+/* Bot messages (left side) */
+.message.received {
+  align-self: flex-start;
+  background: #eaeaea;
+  color: #000;
+  border-bottom-left-radius: 4px;
+}
+
+
+/* Input area */
+#chat-input {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-top: 1px solid #eee;
+  gap: 8px; /* space between input and button */
+}
+
+/* Rounded input box */
+#chat-input input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;   /* curve edges */
+  outline: none;
+  font-size: 14px;
+  background: #f9f9f9;
+}
+
+/* Send button separate */
+#chat-input button {
+  background: #7ab3db;   /* blueish send button */
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;   /* circular button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
