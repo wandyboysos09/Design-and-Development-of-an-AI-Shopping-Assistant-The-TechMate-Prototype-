@@ -73,6 +73,7 @@ NLTK (Natural Language Processing)
 HTML, CSS, JavaScript (Frontend)
 
 6. Future Work
+
 Link to a live product database: Connect to a database with inventory of its count of products to swap out products and their count when user(s) needs change.
 
 Advanced Natural Language Processing: Explore more complex models such as Transformers to enhance the flow and accuracy of conversation.
