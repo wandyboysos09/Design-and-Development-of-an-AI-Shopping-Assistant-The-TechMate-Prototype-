@@ -1,15 +1,15 @@
 # Design-and-Development-of-an-AI-Shopping-Assistant-The-TechMate-Prototype-
-Project Overview
+1. Project Overview
 
 This project is a prototype of an intelligent web chatbot designed to assist customers of a computer and accessories store. It is built as a full-stack web application, with a Python backend handling the AI logic and a simple HTML/CSS/JavaScript frontend providing the user interface. The chatbot is capable of answering a variety of customer questions related to product information, store hours, and technical support.
 
-Key Features
+2. Key Features
 Natural Language Processing (NLP): The chatbot understands and responds to user queries using a trained neural network model.
 Intent-Based Responses: It can classify user requests into predefined intents (e.g., greetings, tech_support, shop_products) and provide relevant, human-like responses.
 Intuitive Web Interface: The chatbot operates as a modern, real-time web chat widget, providing a smooth and user-friendly experience.
 Robust Backend: The backend, built with Flask, acts as a bridge between the front end and the AI model, ensuring seamless communication.
 
-Setup and Installation
+3. Setup and Installation
 To run this project, you need to have Python 3.x installed.
 
 Step 1: Clone the Repository
